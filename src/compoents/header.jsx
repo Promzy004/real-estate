@@ -73,7 +73,44 @@ const Header = () => {
                             )
                         }
                     </>
+                )
+            }
 
+            {
+                breakPoint && (
+                    <>
+                        <div className="flex justify-between py-2 sm:px-20 px-5 bg-primaryColor text-white">
+                            <a href="mailto:" className="flex justify-center items-center gap-2">
+                                <FaTelegramPlane className="sm:text-2xl text-lg" />
+                                <span className="font-light sm:text-sm text-xs">mail.uremail.com</span>
+                            </a>
+                            <a href="tel:+" className="flex justify-center items-center gap-2">
+                                <FaPhone className="sm:text-xl text-base" />
+                                <span className="font-light sm:text-sm text-xs">mail.uremail.com</span>
+                            </a>
+                        </div>
+                        <div className="flex justify-between items-center py-4 sm:px-20 px-5">
+                            <h2>Brand name</h2>
+                            <nav className="flex lg:gap-7 gap-4 items-center justify-center">
+                                <div className="bg-primaryColor p-2 cursor-pointer" onClick={() => setNavLinks(!navlinks)}>
+                                    <FiMenu className="text-xl text-white"/>
+                                </div>
+                            </nav>
+                        </div>
+            
+                        {
+                            navlinks && (
+                                <div className="px-20 py-5 absolute right-[10%] flex flex-col gap-5 bg-red-200">
+                                    <Link to='' className="hover:text-primaryColor">about</Link>
+                                    <Link to='' className="hover:text-primaryColor">contact</Link>
+                                    <Link to='' className="hover:text-primaryColor">link1</Link>
+                                    <Link to='' className="hover:text-primaryColor">link2</Link>
+                                    <Link to='' className="hover:text-primaryColor">link3</Link>
+                                    <Link to='' className="hover:text-primaryColor">link4</Link>
+                                </div>
+                            )
+                        }
+                    </>
                 )
             }
         </header>
