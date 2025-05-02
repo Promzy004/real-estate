@@ -11,6 +11,9 @@
         //background image for the hero section
         'custom-image': "url('./src/assets/images/hero.png')"
       },
+      colors: {
+        primaryColor: '#0984E3'
+      }
     },
   },
   plugins: [],
