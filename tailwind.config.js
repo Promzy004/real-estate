@@ -12,7 +12,8 @@
         'custom-image': "url('./src/assets/images/hero.png')"
       },
       colors: {
-        primaryColor: '#0984E3'
+        primaryColor: '#0984E3',
+        color2: '#FAF8FB'
       }
     },
   },
