@@ -72,7 +72,7 @@ const Home = () => {
                 </div>
             </section>
 
-            <section className="flex flex-col gap-16 justify-center items-center md:py-32 py-20 bg-color2">
+            <section className="flex flex-col gap-12 justify-center items-center md:py-32 py-14 bg-color2">
                 <Headings />
                 <div className="lg:w-[70%] md:w-[80%] sm:w-[75%] w-[90%] grid md:grid-cols-2 grid-cols-1 md:gap-7 gap-10">
                     {features.slice(0, featureIndex).map((feature, index) => (
