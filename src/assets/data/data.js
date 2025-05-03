@@ -42,7 +42,8 @@ export const features = [
         bed: 4,
         bath: 1,
         rooms: 6,
-        sq: 1574
+        sq: 1574,
+        price: 32000
     },
     {
         title: 'Lorem Ipsum 2',
@@ -52,7 +53,8 @@ export const features = [
         bed: 4,
         bath: 3,
         rooms: 8,
-        sq: 1574
+        sq: 1574,
+        price: 30000
     },
     {
         title: 'Lorem Ipsum 3',
@@ -62,7 +64,8 @@ export const features = [
         bed: 2,
         bath: 5,
         rooms: 10,
-        sq: 1580
+        sq: 1580,
+        price: 27000
     },
     {
         title: 'Lorem Ipsum 4',
@@ -72,7 +75,8 @@ export const features = [
         bed: 1,
         bath: 1,
         rooms: 2,
-        sq: 1552
+        sq: 1552,
+        price: 23000
     },
     {
         title: 'Lorem Ipsum 5',
@@ -82,7 +86,8 @@ export const features = [
         bed: 6,
         bath: 7,
         rooms: 2,
-        sq: 1552
+        sq: 1552,
+        price: 40000
     },
     {
         title: 'Lorem Ipsum 6',
@@ -92,6 +97,7 @@ export const features = [
         bed: 1,
         bath: 5,
         rooms: 9,
-        sq: 1945
+        sq: 1945,
+        price: 26000
     },
 ]

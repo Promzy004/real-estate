@@ -4,10 +4,14 @@ import { FaBath } from "react-icons/fa6";
 import { RiSofaFill } from "react-icons/ri";
 import { BiArea } from "react-icons/bi";
 
-const FeatureCard = ({ image=img, title, desc, location, bed, bath, rooms, sq}) => {
+const FeatureCard = ({ image=img, title, desc, location, bed, bath, rooms, sq, price}) => {
     return (
         <div className="grid grid-cols-1 bg-white drop-shadow-md rounded-md">
-            <div className="h-[12rem] rounded-tr-md rounded-tl-md" style={{background: `url(${image})`, backgroundSize: 'cover',}}></div>
+            <div className="h-[12rem] rounded-tr-md rounded-tl-md relative" style={{background: `url(${image})`, backgroundSize: 'cover',}}>
+                <div className="bg-primaryColor absolute left-3 bottom-3 text-white px-2 py-1">
+                    {'\u0024'}{price}
+                </div>
+            </div>
             <div className="px-4 md:py-6 py-4 flex flex-col md:gap-4 gap-2">
                 <h3 className="sm:text-xl text-base font-medium">{title}</h3>
                 <p className="sm:text-sm text-xs font-light">{desc}</p>
