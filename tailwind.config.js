@@ -13,7 +13,8 @@
       },
       colors: {
         primaryColor: '#0984E3',
-        color2: '#FAF8FB'
+        color2: '#FAF8FB',
+        color3: '#455463',
       }
     },
   },
