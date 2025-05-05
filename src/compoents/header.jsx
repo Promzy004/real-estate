@@ -80,11 +80,11 @@ const Header = () => {
                 breakPoint && (
                     <>
                         <div className="flex justify-between py-2 sm:px-20 px-5 bg-primaryColor text-white">
-                            <a href="mailto:" className="flex justify-center items-center gap-2">
+                            <a href="mailto:promiseedwin242@gmail.com" className="flex justify-center items-center gap-2">
                                 <FaTelegramPlane className="sm:text-2xl text-lg" />
                                 <span className="font-light sm:text-sm text-xs">mail.uremail.com</span>
                             </a>
-                            <a href="tel:+" className="flex justify-center items-center gap-2">
+                            <a href="tel:" className="flex justify-center items-center gap-2">
                                 <FaPhone className="sm:text-xl text-base" />
                                 <span className="font-light sm:text-sm text-xs">mail.uremail.com</span>
                             </a>

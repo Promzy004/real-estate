@@ -8,6 +8,7 @@ import Headings from "../compoents/headings";
 import FeatureCard from "../compoents/cards/featureCard";
 import { features } from "../assets/data/data";
 import { useState } from "react";
+import NewsLetter from "../compoents/newsletter";
 
 const Home = () => {
 
@@ -87,6 +88,10 @@ const Home = () => {
                         <button className="bg-gray-400 duration-300 hover:text-white/70 text-white px-6 py-3 text-sm" onClick={handleFeatureShowLess}>Show less</button>
                     )}
                 </div>
+            </section>
+
+            <section className="">
+                <NewsLetter />
             </section>
         </>
     );
