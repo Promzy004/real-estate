@@ -3,13 +3,14 @@ import img1 from "../assets/images/section1-img.png";
 import { FaHome } from "react-icons/fa";
 import { MdAddHome } from "react-icons/md";
 import ServiceCard from "../compoents/cards/serviceCard";
-import { services } from "../assets/data/data";
+import { agents, services } from "../assets/data/data";
 import Headings from "../compoents/headings";
 import FeatureCard from "../compoents/cards/featureCard";
 import { features } from "../assets/data/data";
 import { useState } from "react";
 import NewsLetter from "../compoents/newsletter";
 import Footer from "../compoents/footer";
+import AgentCard from "../compoents/cards/agentCard";
 
 const Home = () => {
 
@@ -23,10 +24,21 @@ const Home = () => {
         setFeatureIndex((prev) => prev - 2);
     }
 
+    const headings = [
+        {
+            title: 'Our Feature Property',
+            desc: 'There are many variations of passages of Lorem Ipsum available but the this is in majority have suffered alteration in some'
+        },
+        {
+            title: 'Meet Our Popular Agents',
+            desc: 'There are many variations of passages of Lorem Ipsum available but the this is in majority have suffered alteration in some'
+        }
+    ]
+
     return (
         <>
             <Hero />
-            <section className="flex justify-center items-center md:py-32 py-20">
+            <section className="flex justify-center items-center md:py-20 py-20">
                 <div className="lg:w-[70%] md:w-[80%] sm:w-[75%] w-[90%] flex flex-col gap-14 justify-center items-center">
                     <div className="w-full grid md:grid-cols-2 grid-cols-1 md:gap-20 gap-14 justify-items-center items-center mb-6">
                         <div className="relative lg:h-full  justify-center items-center bg-red-300 md:row-start-auto row-start-2 md:mr-0 mr-6">
@@ -74,8 +86,8 @@ const Home = () => {
                 </div>
             </section>
 
-            <section className="flex flex-col gap-12 justify-center items-center md:py-32 py-14 bg-color2">
-                <Headings />
+            <section className="flex flex-col gap-12 justify-center items-center md:py-20 py-14 bg-color2">
+                <Headings title={headings[0]['title']} desc={headings[0]['desc']} />
                 <div className="lg:w-[70%] md:w-[80%] sm:w-[75%] w-[90%] grid md:grid-cols-2 grid-cols-1 md:gap-7 gap-10">
                     {features.slice(0, featureIndex).map((feature, index) => (
                         <FeatureCard key={index} image={feature.image} title={feature.title} desc={feature.desc} bed={feature.bed} bath={feature.bath} rooms={feature.rooms} sq={feature.sq} price={feature.price} />
@@ -93,6 +105,15 @@ const Home = () => {
 
             <section className="">
                 <NewsLetter />
+            </section>
+
+            <section className="flex flex-col gap-12 justify-center items-center md:py-20 py-14">
+                <Headings title={headings[1]['title']} desc={headings[1]['desc']} />
+                <div className="lg:w-[70%] md:w-[80%] sm:w-[75%] w-[90%] grid grid-cols-3 gap-7">
+                    {agents.slice(0, 3).map((agent, index) => (
+                        <AgentCard key={index} image={agent.image} name={agent.name} instagram={agent.instagram} linkendIn={agent.linkedIn} pinterest={agent.pinterest} />
+                    ))}
+                </div>
             </section>
 
             <Footer />

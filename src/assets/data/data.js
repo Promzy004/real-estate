@@ -101,3 +101,56 @@ export const features = [
         price: 26000
     },
 ]
+
+
+
+
+//agents lists 
+import agent1 from "../images/agents/agent1.png"
+import agent2 from "../images/agents/agent2.png"
+import agent3 from "../images/agents/agent3.png"
+
+
+
+export const agents = [
+    {
+        id: 1,
+        image: agent1,
+        name: 'Edwin Promise',
+        instagram: '',
+        linkedIn: '',
+        pinterest: '',
+    },
+    {
+        id: 2,
+        image: agent2,
+        name: 'Edward Joshua',
+        instagram: '',
+        linkedIn: '',
+        pinterest: '',
+    },
+    {
+        id: 3,
+        image: agent3,
+        name: 'Grant Marshall',
+        instagram: '',
+        linkedIn: '',
+        pinterest: '',
+    },
+    {
+        id: 4,
+        image: agent3,
+        name: 'Edwin Promise',
+        instagram: '',
+        linkedIn: '',
+        pinterest: '',
+    },
+    {
+        id: 5,
+        image: agent3,
+        name: 'Edwin Promise',
+        instagram: '',
+        linkedIn: '',
+        pinterest: '',
+    },
+]
