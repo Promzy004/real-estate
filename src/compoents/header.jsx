@@ -101,12 +101,17 @@ const Header = () => {
                         {
                             navlinks && (
                                 <div className="px-20 py-5 absolute right-[10%] flex flex-col gap-5 bg-red-200">
-                                    <Link to='' className="hover:text-primaryColor">about</Link>
-                                    <Link to='' className="hover:text-primaryColor">contact</Link>
-                                    <Link to='' className="hover:text-primaryColor">link1</Link>
-                                    <Link to='' className="hover:text-primaryColor">link2</Link>
-                                    <Link to='' className="hover:text-primaryColor">link3</Link>
-                                    <Link to='' className="hover:text-primaryColor">link4</Link>
+                                    <Link to='' className="hover:text-primaryColor">Agency</Link>
+                                    <Link to='' className="hover:text-primaryColor">Testimonials</Link>
+                                    <Link to='' className="hover:text-primaryColor">Blog</Link>
+                                    <Link to='' className="hover:text-primaryColor">Pricing</Link>
+                                    <Link to='' className="hover:text-primaryColor">Gallery</Link>
+                                    <Link to='' className="hover:text-primaryColor">Services</Link>
+                                    <Link to='' className="hover:text-primaryColor">Coming Soon</Link>
+                                    <Link to='' className="hover:text-primaryColor">FAQ</Link>
+                                    <Link to='' className="hover:text-primaryColor">Login</Link>
+                                    <Link to='' className="hover:text-primaryColor">SignUp/Register</Link>
+                                    <Link to='' className="hover:text-primaryColor">Career</Link>
                                 </div>
                             )
                         }

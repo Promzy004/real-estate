@@ -9,6 +9,7 @@ import FeatureCard from "../compoents/cards/featureCard";
 import { features } from "../assets/data/data";
 import { useState } from "react";
 import NewsLetter from "../compoents/newsletter";
+import { Footer2 } from "../compoents/footer";
 
 const Home = () => {
 
@@ -93,6 +94,8 @@ const Home = () => {
             <section className="">
                 <NewsLetter />
             </section>
+
+            <Footer2 />
         </>
     );
 }
