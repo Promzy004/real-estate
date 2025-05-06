@@ -3,7 +3,7 @@ import agent1 from "../../assets/images/agents/agent1.png";
 
 const AgentCard = ({image = agent1, name, instagram, linkendIn, pinterest}) => {
     return (
-        <div className="bg-white border rounded-md cursor-pointer drop-shadow-md flex flex-col items-center gap-3 py-10 hover:scale-105 duration-500">
+        <div className="sm:w-full w-[90%] bg-white border rounded-md cursor-pointer drop-shadow-md flex flex-col items-center gap-3 py-10 hover:scale-105 duration-500">
             <img src={image} alt="agent image" loading="lazy" className="h-20 w-20 rounded-full" />
             <div className="flex flex-col items-center gap-1">
                 <h2 className="text-base font-medium">{name}</h2>
