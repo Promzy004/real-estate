@@ -3,6 +3,7 @@ import { FaUser, FaPhone } from "react-icons/fa6";
 import { FaTelegramPlane } from "react-icons/fa";
 import { FiMenu } from "react-icons/fi";
 import { useEffect, useState } from "react";
+import { AnimatePresence, motion } from "framer-motion";
 
 const Header = () => {
 
@@ -29,7 +30,7 @@ const Header = () => {
             {
                 !breakPoint && (
                     <>
-                        <div className="flex justify-between py-2 lg:px-48 px-10 bg-primaryColor text-white">
+                        <div className="flex justify-between py-2 xl:px-48 lg:px-36 px-10 bg-primaryColor text-white">
                             <div className="flex justify-center items-center gap-5">
                                 <a href="mailto:" className="flex justify-center items-center gap-2">
                                     <FaTelegramPlane className="text-2xl" />
@@ -45,7 +46,7 @@ const Header = () => {
                                 <span className="font-light">Login/Signup</span>
                             </a>
                         </div>
-                        <div className="flex justify-between items-center py-4 lg:px-48 px-10">
+                        <div className="flex justify-between items-center py-4 lg:px-36 px-10">
                             <h2>Brand name</h2>
                             <nav className="flex lg:gap-7 gap-4 items-center justify-center">
                                 <Link to="" className="hover:text-primaryColor">Home</Link>
@@ -60,18 +61,34 @@ const Header = () => {
                             </nav>
                         </div>
             
-                        {
-                            navlinks && (
-                                <div className="px-20 py-5 absolute right-[10%] flex flex-col gap-5 bg-red-200">
-                                    <Link to='' className="hover:text-primaryColor">about</Link>
-                                    <Link to='' className="hover:text-primaryColor">contact</Link>
-                                    <Link to='' className="hover:text-primaryColor">link1</Link>
-                                    <Link to='' className="hover:text-primaryColor">link2</Link>
-                                    <Link to='' className="hover:text-primaryColor">link3</Link>
-                                    <Link to='' className="hover:text-primaryColor">link4</Link>
-                                </div>
-                            )
-                        }
+
+                        <AnimatePresence>
+                            {
+                                navlinks && (
+                                    <motion.div className="pl-5 pr-32 py-5 absolute lg:right-36 right-10 flex flex-col gap-5 bg-white"
+                                        initial={{scaleY: 0, opacity: 0, originY: 0}}
+                                        animate={{scaleY: 1, opacity: 1}}
+                                        transition={{type: 'tween'}}
+                                        exit={{scaleY: 0, opacity: 0, originY: 0}}
+                                    >
+                                        <div className="h-[2px] absolute top-0 left-0 w-full bg-primaryColor"></div>
+                                        <div className="flex flex-col gap-5">
+                                            <Link to='' className="hover:text-primaryColor">Agency</Link>
+                                            <Link to='' className="hover:text-primaryColor">Testimonials</Link>
+                                            <Link to='' className="hover:text-primaryColor">Blog</Link>
+                                            <Link to='' className="hover:text-primaryColor">Pricing</Link>
+                                            <Link to='' className="hover:text-primaryColor">Gallery</Link>
+                                            <Link to='' className="hover:text-primaryColor">Services</Link>
+                                            <Link to='' className="hover:text-primaryColor">Coming Soon</Link>
+                                            <Link to='' className="hover:text-primaryColor">FAQ</Link>
+                                            <Link to='' className="hover:text-primaryColor">Login</Link>
+                                            <Link to='' className="hover:text-primaryColor">SignUp/Register</Link>
+                                            <Link to='' className="hover:text-primaryColor">Career</Link>
+                                        </div>
+                                    </motion.div>
+                                )
+                            }
+                        </AnimatePresence>
                     </>
                 )
             }
@@ -100,7 +117,7 @@ const Header = () => {
             
                         {
                             navlinks && (
-                                <div className="px-20 py-5 absolute right-[10%] flex flex-col gap-5 bg-red-200">
+                                <div className="px-20 py-5 absolute right-48 flex flex-col gap-5 bg-red-200">
                                     <Link to='' className="hover:text-primaryColor">Agency</Link>
                                     <Link to='' className="hover:text-primaryColor">Testimonials</Link>
                                     <Link to='' className="hover:text-primaryColor">Blog</Link>
