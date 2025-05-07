@@ -7,12 +7,12 @@ import Home from "./pages/home"
 function App() {
 
   return ( 
-    <>
+    <div>
       <Header />
       <Routes>
         <Route path="/" element={<Home />}/>
       </Routes>
-    </>
+    </div>
   )
 }
 
