@@ -65,7 +65,8 @@ const Header = () => {
                         <AnimatePresence>
                             {
                                 navlinks && (
-                                    <motion.div className="pl-5 pr-32 py-5 absolute lg:right-36 right-10 flex flex-col gap-5 bg-white"
+                                    <motion.div 
+                                        className="pl-5 pr-32 py-5 absolute lg:right-36 right-10 flex flex-col gap-5 bg-white"
                                         initial={{scaleY: 0, opacity: 0, originY: 0}}
                                         animate={{scaleY: 1, opacity: 1}}
                                         transition={{type: 'tween'}}
@@ -73,17 +74,16 @@ const Header = () => {
                                     >
                                         <div className="h-[2px] absolute top-0 left-0 w-full bg-primaryColor"></div>
                                         <div className="flex flex-col gap-5">
-                                            <Link to='' className="hover:text-primaryColor">Agency</Link>
-                                            <Link to='' className="hover:text-primaryColor">Testimonials</Link>
-                                            <Link to='' className="hover:text-primaryColor">Blog</Link>
-                                            <Link to='' className="hover:text-primaryColor">Pricing</Link>
-                                            <Link to='' className="hover:text-primaryColor">Gallery</Link>
-                                            <Link to='' className="hover:text-primaryColor">Services</Link>
-                                            <Link to='' className="hover:text-primaryColor">Coming Soon</Link>
-                                            <Link to='' className="hover:text-primaryColor">FAQ</Link>
-                                            <Link to='' className="hover:text-primaryColor">Login</Link>
-                                            <Link to='' className="hover:text-primaryColor">SignUp/Register</Link>
-                                            <Link to='' className="hover:text-primaryColor">Career</Link>
+                                             duration-300<Link to='' className="hover:text-primaryColor hover:pl-3">Agency</Link>
+                                            <Link to='' className="hover:text-primaryColor hover:pl-3">Testimonials</Link>
+                                            <Link to='' className="hover:text-primaryColor hover:pl-3">Blog</Link>
+                                            <Link to='' className="hover:text-primaryColor hover:pl-3">Pricing</Link>
+                                            <Link to='' className="hover:text-primaryColor hover:pl-3">Gallery</Link>
+                                            <Link to='' className="hover:text-primaryColor hover:pl-3">Services</Link>
+                                            <Link to='' className="hover:text-primaryColor hover:pl-3">FAQ</Link>
+                                            <Link to='' className="hover:text-primaryColor hover:pl-3">Login</Link>
+                                            <Link to='' className="hover:text-primaryColor hover:pl-3">SignUp/Register</Link>
+                                            <Link to='' className="hover:text-primaryColor hover:pl-3">Career</Link>
                                         </div>
                                     </motion.div>
                                 )
@@ -114,24 +114,34 @@ const Header = () => {
                                 </div>
                             </nav>
                         </div>
-            
-                        {
-                            navlinks && (
-                                <div className="px-20 py-5 absolute right-48 flex flex-col gap-5 bg-red-200">
-                                    <Link to='' className="hover:text-primaryColor">Agency</Link>
-                                    <Link to='' className="hover:text-primaryColor">Testimonials</Link>
-                                    <Link to='' className="hover:text-primaryColor">Blog</Link>
-                                    <Link to='' className="hover:text-primaryColor">Pricing</Link>
-                                    <Link to='' className="hover:text-primaryColor">Gallery</Link>
-                                    <Link to='' className="hover:text-primaryColor">Services</Link>
-                                    <Link to='' className="hover:text-primaryColor">Coming Soon</Link>
-                                    <Link to='' className="hover:text-primaryColor">FAQ</Link>
-                                    <Link to='' className="hover:text-primaryColor">Login</Link>
-                                    <Link to='' className="hover:text-primaryColor">SignUp/Register</Link>
-                                    <Link to='' className="hover:text-primaryColor">Career</Link>
-                                </div>
-                            )
-                        }
+
+
+                        <AnimatePresence>
+                            {
+                                navlinks && (
+                                    <motion.div className="pl-5 py-5 sm:w-auto w-[70%] absolute sm:h-auto h-[calc(100vh-90px)] scrol sm:right-20 right-0 flex flex-col gap-5 bg-white"
+                                        initial={{x: '100vw', opacity: 0}}
+                                        animate={{x: 0, opacity: 1}}
+                                        transition={{type: 'tween', duration: 0.4}}
+                                        exit={{x: '100vw', opacity: 0}}
+                                    >
+                                        <div className="h-[2px] absolute top-0 left-0 w-full bg-primaryColor"></div>
+                                        <div className="flex flex-col gap-5 overflow-y-auto">
+                                            <Link to='' className="hover:text-primaryColor hover:pl-3 duration-300">Agency</Link>
+                                            <Link to='' className="hover:text-primaryColor hover:pl-3 duration-300">Testimonials</Link>
+                                            <Link to='' className="hover:text-primaryColor hover:pl-3 duration-300">Blog</Link>
+                                            <Link to='' className="hover:text-primaryColor hover:pl-3 duration-300">Pricing</Link>
+                                            <Link to='' className="hover:text-primaryColor hover:pl-3 duration-300">Gallery</Link>
+                                            <Link to='' className="hover:text-primaryColor hover:pl-3 duration-300">Services</Link>
+                                            <Link to='' className="hover:text-primaryColor hover:pl-3 duration-300">FAQ</Link>
+                                            <Link to='' className="hover:text-primaryColor hover:pl-3 duration-300">Login</Link>
+                                            <Link to='' className="hover:text-primaryColor hover:pl-3 duration-300">SignUp/Register</Link>
+                                            <Link to='' className="hover:text-primaryColor hover:pl-3 duration-300">Career</Link>
+                                        </div>
+                                    </motion.div>
+                                )
+                            }
+                        </AnimatePresence>
                     </>
                 )
             }

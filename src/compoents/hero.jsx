@@ -1,7 +1,7 @@
 
 const Hero = () => {
     return (
-        <div className="hero mt-[105px] relative min-h-[35rem] flex flex-col gap-5 justify-center items-center">
+        <div className="hero sm:mt-[105px] mt-[100px] relative min-h-[35rem] flex flex-col gap-5 justify-center items-center">
             <h2 className="text-white md:text-4xl text-2xl font-semibold">Find Your Dream Properties</h2>
             <div className="bg-white lg:w-[65%] md:w-[80%] w-[80%] p-5 flex flex-col gap-5">
                 <h3 className="relative pb-1 md:text-lg text-base font-medium before:content-[''] before:bg-primaryColor before:absolute before:left-0 before:bottom-0 before:h-1 before:w-10 ">Search Your Properties</h3>
