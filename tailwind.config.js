@@ -15,6 +15,8 @@
         primaryColor: '#0984E3',
         color2: '#FAF8FB',
         color3: '#455463',
+        color4: '#25517A',
+        color5: '#33628D',
       }
     },
   },
