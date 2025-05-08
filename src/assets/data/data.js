@@ -100,6 +100,61 @@ export const properties = [
         sq: 1945,
         price: 26000
     },
+    {
+        title: 'Lorem Ipsum 7',
+        desc: 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form injected',
+        location: '779 6th Ave New York, NY 120400',
+        image: feature4,
+        bed: 1,
+        bath: 5,
+        rooms: 9,
+        sq: 1945,
+        price: 26000
+    },
+    {
+        title: 'Lorem Ipsum 8',
+        desc: 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form injected',
+        location: '779 6th Ave New York, NY 120400',
+        image: feature4,
+        bed: 1,
+        bath: 5,
+        rooms: 9,
+        sq: 1945,
+        price: 26000
+    },
+    {
+        title: 'Lorem Ipsum 9',
+        desc: 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form injected',
+        location: '779 6th Ave New York, NY 120400',
+        image: feature4,
+        bed: 1,
+        bath: 5,
+        rooms: 9,
+        sq: 1945,
+        price: 26000
+    },
+    {
+        title: 'Lorem Ipsum 10',
+        desc: 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form injected',
+        location: '779 6th Ave New York, NY 120400',
+        image: feature4,
+        bed: 1,
+        bath: 5,
+        rooms: 9,
+        sq: 1945,
+        price: 26000
+    },
+    {
+        title: 'Lorem Ipsum 11',
+        desc: 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form injected',
+        location: '779 6th Ave New York, NY 120400',
+        image: feature4,
+        bed: 1,
+        bath: 5,
+        rooms: 9,
+        sq: 1945,
+        price: 26000
+    },
 ]
 
 

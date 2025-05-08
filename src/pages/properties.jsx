@@ -18,8 +18,8 @@ const Properties = () => {
     return (
         <div className="">
             <PagesHero />
-            <div className="md:py-20 py-14 lg:w-[70%] md:w-[80%] sm:w-[75%] w-[90%] flex flex-col gap-12 mx-auto">
-                <form action="" className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 lg:gap-x-2 md:gap-x-3 gap-x-5 lg:gap-y-5 md:gap-y-3 gap-y-3 text-sm border p-5">
+            <div className="md:py-20 py-14 lg:w-[70%] md:w-[80%] sm:w-[75%] w-[90%] flex flex-col items-center gap-12 mx-auto">
+                <form action="" className="w-full grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 lg:gap-x-2 md:gap-x-3 gap-x-5 lg:gap-y-5 md:gap-y-3 gap-y-3 text-sm border p-5">
                     <label className="flex flex-col gap-1">
                         Looking For
                         <input type="text" className="hero-input" placeholder="Property Type" />
