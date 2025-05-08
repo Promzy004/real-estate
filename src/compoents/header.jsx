@@ -130,7 +130,10 @@ const Header = () => {
                                     >
                                         <div className="h-[2px] absolute top-0 left-0 w-full bg-primaryColor"></div>
                                         <div className="flex flex-col gap-5 overflow-y-auto">
-                                            <Link to='' className="hover:text-primaryColor hover:pl-3 duration-300">Agency</Link>
+                                            {pages.map((page, index) => {
+                                                return <Link to={`/${page.path}`} onClick={() => setNavLinks(false)} key={index} className="hover:text-primaryColor hover:pl-3 hover:pr-0 pr-3 duration-300" >{page.name}</Link>
+                                            })}
+                                            {/* <Link to='' className="hover:text-primaryColor hover:pl-3 duration-300">Agency</Link>
                                             <Link to='' className="hover:text-primaryColor hover:pl-3 duration-300">Testimonials</Link>
                                             <Link to='' className="hover:text-primaryColor hover:pl-3 duration-300">Blog</Link>
                                             <Link to='' className="hover:text-primaryColor hover:pl-3 duration-300">Pricing</Link>
@@ -139,7 +142,7 @@ const Header = () => {
                                             <Link to='' className="hover:text-primaryColor hover:pl-3 duration-300">FAQ</Link>
                                             <Link to='' className="hover:text-primaryColor hover:pl-3 duration-300">Login</Link>
                                             <Link to='' className="hover:text-primaryColor hover:pl-3 duration-300">SignUp/Register</Link>
-                                            <Link to='' className="hover:text-primaryColor hover:pl-3 duration-300">Career</Link>
+                                            <Link to='' className="hover:text-primaryColor hover:pl-3 duration-300">Career</Link> */}
                                         </div>
                                     </motion.div>
                                 )
