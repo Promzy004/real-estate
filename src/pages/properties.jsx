@@ -17,7 +17,7 @@ const Properties = () => {
 
     return (
         <div className="">
-            <PagesHero />
+            <PagesHero title='Property Listing' page='Property' />
             <div className="md:py-20 py-14 lg:w-[70%] md:w-[80%] sm:w-[75%] w-[90%] flex flex-col items-center gap-12 mx-auto">
                 <form action="" className="w-full grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 lg:gap-x-2 md:gap-x-3 gap-x-5 lg:gap-y-5 md:gap-y-3 gap-y-3 text-sm border p-5">
                     <label className="flex flex-col gap-1">
@@ -48,7 +48,7 @@ const Properties = () => {
                 </form>
                 <div className="grid md:grid-cols-2 grid-cols-1 md:gap-7 gap-10">
                     {properties.slice(0, propertyIndex).map((property, index) => (
-                        <PropertyCard key={index} image={property.image} title={property.title} desc={property.desc} bed={property.bed} bath={property.bath} rooms={property.rooms} sq={property.sq} price={property.price} />
+                        <PropertyCard key={index} id={property.id} image={property.image} title={property.title} desc={property.desc} bed={property.bed} bath={property.bath} rooms={property.rooms} sq={property.sq} price={property.price} />
                     ))}
                 </div>
                 <div className="flex gap-10">

@@ -3,10 +3,15 @@ import img from "../../assets/images/feature1.png";
 import { FaBath } from "react-icons/fa6";
 import { RiSofaFill } from "react-icons/ri";
 import { BiArea } from "react-icons/bi";
+import { useNavigate } from "react-router-dom";
 
-const PropertyCard = ({ image=img, title, desc, location, bed, bath, rooms, sq, price}) => {
+const PropertyCard = ({ image=img, title, desc, location, bed, bath, rooms, sq, price, id}) => {
+
+    const navigate = useNavigate()
+    console.log(id)
+
     return (
-        <div className="grid grid-cols-1 bg-white drop-shadow-md rounded-md hover:scale-105 duration-500 cursor-pointer">
+        <div className="grid grid-cols-1 bg-white drop-shadow-md rounded-md hover:scale-105 duration-500 cursor-pointer" onClick={() => navigate(`/property/${id}`)}>
             <div className="h-[12rem] rounded-tr-md rounded-tl-md relative" style={{background: `url(${image})`, backgroundSize: 'cover',}}>
                 <div className="bg-primaryColor absolute left-3 bottom-3 text-white px-2 py-1">
                     {'\u0024'}{price}
