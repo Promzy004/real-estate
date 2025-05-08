@@ -11,6 +11,8 @@ import { useState } from "react";
 import NewsLetter from "../compoents/newsletter";
 import Footer from "../compoents/footer";
 import AgentCard from "../compoents/cards/agentCard";
+import { useNavigate } from "react-router-dom";
+import SeeMoreButton from "../compoents/seeMoreButton";
 
 const Home = () => {
 
@@ -23,6 +25,8 @@ const Home = () => {
     const handleFeatureShowLess = () => {
         setFeatureIndex((prev) => prev - 2);
     }
+
+    const navigate = useNavigate()
 
     const headings = [
         {
@@ -101,6 +105,7 @@ const Home = () => {
                         <button className="bg-gray-400 duration-300 hover:text-white/70 text-white px-6 py-3 text-sm" onClick={handleFeatureShowLess}>Show less</button>
                     )}
                 </div>
+                {/* <SeeMoreButton index={featureIndex} data_length={features.length} handleShowMore={handleFeatureShowMore} handleShowLess={handleFeatureShowLess} /> */}
             </section>
 
             <section className="">
@@ -114,10 +119,8 @@ const Home = () => {
                         <AgentCard key={index} image={agent.image} name={agent.name} instagram={agent.instagram} linkendIn={agent.linkedIn} pinterest={agent.pinterest} />
                     ))}
                 </div>
-                <button className="bg-primaryColor duration-300 hover:text-white/70 text-white px-6 py-3 text-sm">See All Agents</button>
+                <button className="bg-primaryColor duration-300 hover:text-white/70 text-white px-6 py-3 text-sm" onClick={() => navigate('/agents')}>See All Agents</button>
             </section>
-
-            <Footer />
         </>
     );
 }
