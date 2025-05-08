@@ -5,14 +5,13 @@ import { MdAddHome } from "react-icons/md";
 import ServiceCard from "../compoents/cards/serviceCard";
 import { agents, services } from "../assets/data/data";
 import Headings from "../compoents/headings";
-import FeatureCard from "../compoents/cards/featureCard";
-import { features } from "../assets/data/data";
+import { properties } from "../assets/data/data";
 import { useState } from "react";
 import NewsLetter from "../compoents/newsletter";
-import Footer from "../compoents/footer";
 import AgentCard from "../compoents/cards/agentCard";
 import { useNavigate } from "react-router-dom";
 import SeeMoreButton from "../compoents/seeMoreButton";
+import PropertyCard from "../compoents/cards/propertyCard";
 
 const Home = () => {
 
@@ -93,12 +92,12 @@ const Home = () => {
             <section className="flex flex-col gap-12 justify-center items-center md:py-20 py-14 bg-color2">
                 <Headings title={headings[0]['title']} desc={headings[0]['desc']} />
                 <div className="lg:w-[70%] md:w-[80%] sm:w-[75%] w-[90%] grid md:grid-cols-2 grid-cols-1 md:gap-7 gap-10">
-                    {features.slice(0, featureIndex).map((feature, index) => (
-                        <FeatureCard key={index} image={feature.image} title={feature.title} desc={feature.desc} bed={feature.bed} bath={feature.bath} rooms={feature.rooms} sq={feature.sq} price={feature.price} />
+                    {properties.slice(0, featureIndex).map((feature, index) => (
+                        <PropertyCard key={index} image={feature.image} title={feature.title} desc={feature.desc} bed={feature.bed} bath={feature.bath} rooms={feature.rooms} sq={feature.sq} price={feature.price} />
                     ))}
                 </div>
                 <div className="flex gap-10">
-                    {(featureIndex < features.length)&& (
+                    {(featureIndex < properties.length)&& (
                         <button className="bg-primaryColor duration-300 hover:text-white/70 text-white px-6 py-3 text-sm" onClick={handleFeatureShowMore}>See More Property</button>
                     )}
                     {featureIndex > 2 && (

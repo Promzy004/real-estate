@@ -51,8 +51,8 @@ const Header = () => {
                             <nav className="flex lg:gap-7 gap-4 items-center justify-center">
                                 <Link to="" className="hover:text-primaryColor duration-300" onClick={() => setNavLinks(false)}>Home</Link>
                                 <Link to="" className="hover:text-primaryColor duration-300" onClick={() => setNavLinks(false)}>About Us</Link>
-                                <Link to="" className="hover:text-primaryColor duration-300" onClick={() => setNavLinks(false)}>Property</Link>
-                                <Link to="" className="hover:text-primaryColor duration-300" onClick={() => setNavLinks(false)}>Agents</Link>
+                                <Link to="/properties" className="hover:text-primaryColor duration-300" onClick={() => setNavLinks(false)}>Property</Link>
+                                <Link to="/agents" className="hover:text-primaryColor duration-300" onClick={() => setNavLinks(false)}>Agents</Link>
                                 <Link to="" className="hover:text-primaryColor duration-300" onClick={() => setNavLinks(false)}>Pages</Link>
                                 <Link to="" className="hover:text-primaryColor duration-300" onClick={() => setNavLinks(false)}>Contact Us</Link>
                                 <div className="bg-primaryColor p-2 cursor-pointer" onClick={() => setNavLinks(!navlinks)}>

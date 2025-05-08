@@ -33,7 +33,7 @@ import feature4 from "../images/feature4.png"
 
 
 
-export const features = [
+export const properties = [
     {
         title: 'Bravo Apollo Apartments',
         desc: 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form injected',

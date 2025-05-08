@@ -1,10 +1,10 @@
 import { Route, Routes } from "react-router-dom"
 import Header from "./compoents/header"
-import Hero from "./compoents/hero"
 import Home from "./pages/home"
 import Agents from "./pages/agent"
 import Error404 from "./pages/error404"
 import Footer from "./compoents/footer"
+import Properties from "./pages/properties"
 
 
 function App() {
@@ -15,6 +15,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />}/>
         <Route path="/agents" element={<Agents />} />
+        <Route path="/properties" element={<Properties />} />
         <Route path="*" element={<Error404 />} />
       </Routes>
       <Footer />
