@@ -324,8 +324,16 @@ export const agents = [
 
 export const pages = [
     {
+        name: 'Home',
+        path: '',
+    },
+    {
         name: 'Agency',
         path: 'agents',
+    },
+    {
+        name: 'Property',
+        path: 'properties',
     },
     {
         name: 'Testimonials',
@@ -334,6 +342,10 @@ export const pages = [
     {
         name: 'Blogs',
         path: 'blogs',
+    },
+    {
+        name: 'About Us',
+        path: 'about',
     },
     {
         name: 'Pricing',
@@ -346,6 +358,10 @@ export const pages = [
     {
         name: 'FAQs',
         path: 'faqs',
+    },
+    {
+        name: 'Contact Us',
+        path: 'contact',
     },
     {
         name: 'Login',
