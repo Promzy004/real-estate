@@ -27,7 +27,7 @@ const Agents = () => {
                 </div>
                 <div className="flex gap-10">
                     {(agentIndex < agents.length)&& (
-                        <button className="bg-primaryColor duration-300 hover:text-white/70 text-white px-6 py-3 text-sm" onClick={handleAgentsShowMore}>See More Property</button>
+                        <button className="bg-primaryColor duration-300 hover:text-white/70 text-white px-6 py-3 text-sm" onClick={handleAgentsShowMore}>See More Agents</button>
                     )}
                     {agentIndex > 9 && (
                         <button className="bg-gray-400 duration-300 hover:text-white/70 text-white px-6 py-3 text-sm" onClick={handleAgentsShowLess}>Show less</button>
