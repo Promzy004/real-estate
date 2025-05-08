@@ -110,7 +110,7 @@ const Header = () => {
                             </a>
                         </div>
                         <div className="flex justify-between items-center py-4 sm:px-20 px-5">
-                            <Link to='/'>Brand name</Link>
+                            <Link to='/'> Brand name</Link>
                             <nav className="flex lg:gap-7 gap-4 items-center justify-center">
                                 <div className="bg-primaryColor p-2 cursor-pointer" onClick={() => setNavLinks(!navlinks)}>
                                     <FiMenu className="text-xl text-white"/>
