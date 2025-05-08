@@ -18,7 +18,7 @@ const Agents = () => {
     
     return (
         <div>
-            <PagesHero />
+            <PagesHero title='Our Talented Agents' page='Agents' />
             <div className="flex flex-col gap-12 justify-center items-center md:py-20 py-14">
                 <div className="lg:w-[70%] md:w-[80%] sm:w-[75%] w-[90%] grid md:grid-cols-3 sm:grid-cols-2 lg:gap-7 grid-cols-1 justify-items-center items-center sm:gap-4 gap-8">
                     {agents.slice(0, agentIndex).map((agent, index) => (
