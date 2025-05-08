@@ -1,6 +1,5 @@
-import { ArrowRightIcon } from "@heroicons/react/16/solid";
 import newsletter from "../assets/images/newsletter.png";
-import { PiArrowRightBold, PiArrowRightFill } from "react-icons/pi";
+import { PiArrowRightBold } from "react-icons/pi";
 
 const NewsLetter = () => {
     return (

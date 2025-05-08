@@ -1,15 +1,15 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { FaUser, FaPhone } from "react-icons/fa6";
 import { FaTelegramPlane } from "react-icons/fa";
 import { FiMenu } from "react-icons/fi";
 import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
+import { pages } from "../assets/data/data";
 
 const Header = () => {
 
     const [breakPoint, setBreakPoint] = useState(window.innerWidth < 768);
     const [navlinks, setNavLinks] = useState(false);
-    console.log(breakPoint)
 
     useEffect(() => {
 
@@ -49,12 +49,12 @@ const Header = () => {
                         <div className="flex justify-between items-center py-4 lg:px-36 px-10">
                             <h2>Brand name</h2>
                             <nav className="flex lg:gap-7 gap-4 items-center justify-center">
-                                <Link to="" className="hover:text-primaryColor">Home</Link>
-                                <Link to="" className="hover:text-primaryColor">About Us</Link>
-                                <Link to="" className="hover:text-primaryColor">Property</Link>
-                                <Link to="" className="hover:text-primaryColor">Agents</Link>
-                                <Link to="" className="hover:text-primaryColor">Pages</Link>
-                                <Link to="" className="hover:text-primaryColor">Contact Us</Link>
+                                <Link to="" className="hover:text-primaryColor duration-300" onClick={() => setNavLinks(false)}>Home</Link>
+                                <Link to="" className="hover:text-primaryColor duration-300" onClick={() => setNavLinks(false)}>About Us</Link>
+                                <Link to="" className="hover:text-primaryColor duration-300" onClick={() => setNavLinks(false)}>Property</Link>
+                                <Link to="" className="hover:text-primaryColor duration-300" onClick={() => setNavLinks(false)}>Agents</Link>
+                                <Link to="" className="hover:text-primaryColor duration-300" onClick={() => setNavLinks(false)}>Pages</Link>
+                                <Link to="" className="hover:text-primaryColor duration-300" onClick={() => setNavLinks(false)}>Contact Us</Link>
                                 <div className="bg-primaryColor p-2 cursor-pointer" onClick={() => setNavLinks(!navlinks)}>
                                     <FiMenu className="text-xl text-white"/>
                                 </div>
@@ -74,16 +74,19 @@ const Header = () => {
                                     >
                                         <div className="h-[2px] absolute top-0 left-0 w-full bg-primaryColor"></div>
                                         <div className="flex flex-col gap-5">
-                                             duration-300<Link to='' className="hover:text-primaryColor hover:pl-3">Agency</Link>
-                                            <Link to='' className="hover:text-primaryColor hover:pl-3">Testimonials</Link>
-                                            <Link to='' className="hover:text-primaryColor hover:pl-3">Blog</Link>
-                                            <Link to='' className="hover:text-primaryColor hover:pl-3">Pricing</Link>
-                                            <Link to='' className="hover:text-primaryColor hover:pl-3">Gallery</Link>
-                                            <Link to='' className="hover:text-primaryColor hover:pl-3">Services</Link>
-                                            <Link to='' className="hover:text-primaryColor hover:pl-3">FAQ</Link>
-                                            <Link to='' className="hover:text-primaryColor hover:pl-3">Login</Link>
-                                            <Link to='' className="hover:text-primaryColor hover:pl-3">SignUp/Register</Link>
-                                            <Link to='' className="hover:text-primaryColor hover:pl-3">Career</Link>
+                                            {pages.map((page, index) => {
+                                                return <Link to={`/${page.path}`} onClick={() => setNavLinks(false)} key={index} className="hover:text-primaryColor hover:pl-3 hover:pr-0 pr-3 duration-300" >{page.name}</Link>
+                                            })}
+                                            {/* <Link to='' className="hover:text-primaryColor hover:pl-3 duration-300">Agency</Link>
+                                            <Link to='' className="hover:text-primaryColor hover:pl-3 duration-300">Testimonials</Link>
+                                            <Link to='' className="hover:text-primaryColor hover:pl-3 duration-300">Blog</Link>
+                                            <Link to='' className="hover:text-primaryColor hover:pl-3 duration-300">Pricing</Link>
+                                            <Link to='' className="hover:text-primaryColor hover:pl-3 duration-300">Gallery</Link>
+                                            <Link to='' className="hover:text-primaryColor hover:pl-3 duration-300">Services</Link>
+                                            <Link to='' className="hover:text-primaryColor hover:pl-3 duration-300">FAQ</Link>
+                                            <Link to='' className="hover:text-primaryColor hover:pl-3 duration-300">Login</Link>
+                                            <Link to='' className="hover:text-primaryColor pr-3 hover:pl-3 hover:pr-0 duration-300">SignUp/Register</Link>
+                                            <Link to='' className="hover:text-primaryColor hover:pl-3 duration-300">Career</Link> */}
                                         </div>
                                     </motion.div>
                                 )
@@ -119,7 +122,7 @@ const Header = () => {
                         <AnimatePresence>
                             {
                                 navlinks && (
-                                    <motion.div className="pl-5 py-5 sm:w-auto w-[70%] absolute sm:h-auto h-[calc(100vh-90px)] scrol sm:right-20 right-0 flex flex-col gap-5 bg-white"
+                                    <motion.div className="pl-5 py-5 sm:w-[40%] w-[60%] absolute sm:h-auto h-[calc(100vh-90px)] scrol sm:right-20 right-0 flex flex-col gap-5 bg-white"
                                         initial={{x: '100vw', opacity: 0}}
                                         animate={{x: 0, opacity: 1}}
                                         transition={{type: 'tween', duration: 0.4}}

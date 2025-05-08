@@ -153,4 +153,144 @@ export const agents = [
         linkedIn: '',
         pinterest: '',
     },
+    {
+        id: 5,
+        image: agent3,
+        name: 'Edwin Promise',
+        instagram: '',
+        linkedIn: '',
+        pinterest: '',
+    },
+    {
+        id: 5,
+        image: agent3,
+        name: 'Edwin Promise',
+        instagram: '',
+        linkedIn: '',
+        pinterest: '',
+    },
+    {
+        id: 5,
+        image: agent3,
+        name: 'Edwin Promise',
+        instagram: '',
+        linkedIn: '',
+        pinterest: '',
+    },
+    {
+        id: 5,
+        image: agent3,
+        name: 'Edwin Promise',
+        instagram: '',
+        linkedIn: '',
+        pinterest: '',
+    },
+    {
+        id: 5,
+        image: agent3,
+        name: 'Edwin Promise',
+        instagram: '',
+        linkedIn: '',
+        pinterest: '',
+    },
+    {
+        id: 5,
+        image: agent3,
+        name: 'Edwin Promise',
+        instagram: '',
+        linkedIn: '',
+        pinterest: '',
+    },
+    {
+        id: 5,
+        image: agent3,
+        name: 'Edwin Promise',
+        instagram: '',
+        linkedIn: '',
+        pinterest: '',
+    },
+    {
+        id: 5,
+        image: agent3,
+        name: 'Edwin Promise',
+        instagram: '',
+        linkedIn: '',
+        pinterest: '',
+    },
+    {
+        id: 5,
+        image: agent3,
+        name: 'Edwin Promise',
+        instagram: '',
+        linkedIn: '',
+        pinterest: '',
+    },
+    {
+        id: 5,
+        image: agent3,
+        name: 'Edwin Promise',
+        instagram: '',
+        linkedIn: '',
+        pinterest: '',
+    },
+    {
+        id: 5,
+        image: agent3,
+        name: 'Edwin Promise',
+        instagram: '',
+        linkedIn: '',
+        pinterest: '',
+    },
+    {
+        id: 5,
+        image: agent3,
+        name: 'Edwin Promise',
+        instagram: '',
+        linkedIn: '',
+        pinterest: '',
+    },
+]
+
+
+
+
+//pages 
+
+export const pages = [
+    {
+        name: 'Agency',
+        path: 'agents',
+    },
+    {
+        name: 'Testimonials',
+        path: 'testimonials',
+    },
+    {
+        name: 'Blogs',
+        path: 'blogs',
+    },
+    {
+        name: 'Pricing',
+        path: 'pricing',
+    },
+    {
+        name: 'Services',
+        path: 'services',
+    },
+    {
+        name: 'FAQs',
+        path: 'faqs',
+    },
+    {
+        name: 'Login',
+        path: 'login',
+    },
+    {
+        name: 'SignUp/Register',
+        path: 'register',
+    },
+    {
+        name: 'Career',
+        path: 'career',
+    },
 ]
