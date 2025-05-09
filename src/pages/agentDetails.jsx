@@ -1,15 +1,70 @@
 import { useParams } from "react-router-dom";
 import PagesHero from "../compoents/pagesHero";
+import { agents } from "../assets/data/data";
+import { FaPhone, FaTelegramPlane } from "react-icons/fa";
 
 const AgentDetails = () => {
 
     const { id } = useParams()
+    const agent = agents.filter(agent => agent.id === Number(id));
+    console.log(agent)
     
     return (
         <div>
             <PagesHero title='Agent Details' page='Agent' />
-            <div className="md:py-20 py-14 lg:w-[60%] md:w-[80%] sm:w-[75%] w-[90%] mx-auto">
-                agent details - {id}
+            <div className="md:py-20 py-14 lg:w-[90%] md:w-[90%] sm:w-[75%] w-[90%] mx-auto">
+                {agent.map((agent, index) => (
+                    <div key={index} className="grid lg:grid-cols-2 md:grid-cols-[3fr_4fr] gap-10 border sm:p-5 p-3">
+                        <div className="flex flex-col md:gap-5 gap-7">
+                            <div className="flex sm:gap-5 gap-3 items-center">
+                                <img src={agent.image} alt="agent image" className="lg:h-44 md:h-36" />
+                                <div className="flex flex-col gap-4 items-start">
+                                    <div className="relative flex flex-col gap-1 pb-4 before:content-[''] before:h-[2px] before:w-12 before:bg-gray-300 before:absolute before:left-0 before:bottom-0">
+                                        <h2 className="lg:text-2xl md:text-xl text-lg font-medium">{agent.name}</h2>
+                                        <p className="lg:text-base text-sm text-gray-500">Designation</p>
+                                    </div>
+                                    <div className="flex flex-col items-start gap-2">
+                                        <a href="mailto:promiseedwin242@gmail.com" className="flex justify-center items-center lg:gap-3 md:gap-2 gap-2">
+                                            <FaTelegramPlane className="lg:text-xl md:text-lg sm:text-base text-primaryColor" />
+                                            <span className="font-light lg:text-base md:text-sm text-xs">mail.uremail.com</span>
+                                        </a>
+                                        <a href="tel:+2347058149298" className="flex justify-center items-center lg:gap-3 md:gap-2 gap-2">
+                                            <FaPhone className="lg:text-lg md:text-base text-sm text-primaryColor" />
+                                            <span className="font-light lg:text-base text-xs">Mobile</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="flex flex-col md:gap-3 gap-5">
+                                <h3 className="relative pb-2 lg:text-xl text-base font-medium before:content-[''] before:h-[3px] before:w-12 before:bg-primaryColor before:absolute before:left-0 before:bottom-0">About {agent.name}</h3>
+                                <p className="lg:text-base md:text-sm text-sm font-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum dolores tempore nemo exercitationem beatae consectetur. Eos quae aut autem similique, dolorum, nam aliquid culpa a facilis nobis, enim suscipit at?</p>
+                            </div>
+                        </div>
+
+                        <form action="" method="post" className="flex flex-col gap-8 border p-5">
+                            <h3 className="relative pb-2 lg:text-xl text-base font-medium before:content-[''] before:h-[3px] before:w-12 before:bg-primaryColor before:absolute before:left-0 before:bottom-0">Contact with {agent.name}</h3>
+                            <div className="flex flex-col gap-4">
+                                <label className="flex flex-col gap-1 lg:text-base md:text-sm text-sm">
+                                    Full Name
+                                    <input type="text" className="hero-input" placeholder="Type Full Name" />
+                                </label>
+                                <label className="flex flex-col gap-1 lg:text-base md:text-sm text-sm">
+                                    Email
+                                    <input type="text" className="hero-input" placeholder="Your Email" />
+                                </label>
+                                <label className="flex flex-col gap-1 lg:text-base md:text-sm text-sm">
+                                    Subject
+                                    <input type="text" className="hero-input" placeholder="Type Subject" />
+                                </label>
+                                <label className="flex flex-col gap-1 lg:text-base md:text-sm text-sm">
+                                    Message
+                                    <textarea name="" id="" className="hero-input" placeholder="Type Message"></textarea>
+                                </label>
+                                <input type="Submit" value='Send Message' className="bg-primaryColor sm:px-7 sm:py-2 px-4 py-2 flex self-start text-sm text-white mt-3 hover:text-color3 cursor-pointer" />
+                            </div>
+                        </form>
+                    </div>
+                ))}
             </div>
         </div>
     );
