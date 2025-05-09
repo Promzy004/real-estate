@@ -27,6 +27,11 @@ const Home = () => {
 
     const navigate = useNavigate()
 
+    const handleClick = () => {
+        navigate('/agents')
+        window.scrollTo(0,0)
+    }
+
     const headings = [
         {
             title: 'Our Feature Property',
@@ -118,7 +123,7 @@ const Home = () => {
                         <AgentCard id={agent.id} key={index} image={agent.image} name={agent.name} instagram={agent.instagram} linkendIn={agent.linkedIn} pinterest={agent.pinterest} />
                     ))}
                 </div>
-                <button className="bg-primaryColor duration-300 hover:text-white/70 text-white px-6 py-3 text-sm" onClick={() => navigate('/agents')}>See All Agents</button>
+                <button className="bg-primaryColor duration-300 hover:text-white/70 text-white px-6 py-3 text-sm" onClick={handleClick}>See All Agents</button>
             </section>
         </>
     );
