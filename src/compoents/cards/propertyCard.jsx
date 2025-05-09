@@ -61,6 +61,9 @@ const PropertyCard = ({ image=img, title, desc, location, bed, bath, rooms, sq, 
                         </span>
                     </span>
                 </div>
+                <div>
+                    <h3>Property Gallery</h3>
+                </div>
             </div>
         </div>
     );
