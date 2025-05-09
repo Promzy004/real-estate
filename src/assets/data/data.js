@@ -29,6 +29,12 @@ import feature1 from "../images/feature1.png"
 import feature2 from "../images/feature2.png"
 import feature3 from "../images/feature3.png"
 import feature4 from "../images/feature4.png"
+import gallery1 from "../images/gallery/gallery1.png";
+import gallery2 from "../images/gallery/gallery2.png";
+import gallery3 from "../images/gallery/gallery3.png";
+import gallery4 from "../images/gallery/gallery4.png";
+import gallery5 from "../images/gallery/gallery5.png";
+import gallery6 from "../images/gallery/gallery6.png";
 
 
 
@@ -40,6 +46,7 @@ export const properties = [
         desc: 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form injected',
         location: '779 6th Ave New York, NY 120400',
         image: feature1,
+        gallery: [gallery1, gallery2, gallery3, gallery4, gallery5, gallery6],
         bed: 4,
         bath: 1,
         rooms: 6,
