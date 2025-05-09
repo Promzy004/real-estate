@@ -73,10 +73,15 @@ const Header = () => {
                                         exit={{scaleY: 0, opacity: 0, originY: 0}}
                                     >
                                         <div className="h-[2px] absolute top-0 left-0 w-full bg-primaryColor"></div>
-                                        <div className="flex flex-col gap-5">
-                                            {pages.map((page, index) => {
-                                                return <Link to={`/${page.path}`} onClick={() => setNavLinks(false)} key={index} className="hover:text-primaryColor hover:pl-3 hover:pr-0 pr-3 duration-300" >{page.name}</Link>
-                                            })}
+                                        <div className="flex flex-col gap-2">
+                                            {pages.filter(page => (page.name !== 'Home') && (page.name !== 'Property') && (page.name !== 'Contact Us') && (page.name !== 'About Us')).map((page, index) => (
+                                                <Link to={`/${page.path}`} onClick={() => setNavLinks(false)} key={index} className="hover:text-primaryColor py-2 hover:pl-3 hover:pr-0 pr-3 duration-300" >{page.name}</Link>
+                                                // <div>
+                                                //     {page.name !== 'Property' && (
+                                                //         <Link to={`/${page.path}`} onClick={() => setNavLinks(false)} key={index} className="hover:text-primaryColor inline-block p-1 hover:pl-3 hover:pr-0 pr-3 duration-300" >{page.name}</Link>
+                                                //     )}
+                                                // </div>
+                                            ))}
                                             {/* <Link to='' className="hover:text-primaryColor hover:pl-3 duration-300">Agency</Link>
                                             <Link to='' className="hover:text-primaryColor hover:pl-3 duration-300">Testimonials</Link>
                                             <Link to='' className="hover:text-primaryColor hover:pl-3 duration-300">Blog</Link>
@@ -110,7 +115,7 @@ const Header = () => {
                             </a>
                         </div>
                         <div className="flex justify-between items-center py-4 sm:px-20 px-5">
-                            <Link to='/'> Brand name</Link>
+                            <Link to="/">Brand name</Link>
                             <nav className="flex lg:gap-7 gap-4 items-center justify-center">
                                 <div className="bg-primaryColor p-2 cursor-pointer" onClick={() => setNavLinks(!navlinks)}>
                                     <FiMenu className="text-xl text-white"/>

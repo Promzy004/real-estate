@@ -5,6 +5,7 @@ import Agents from "./pages/agent"
 import Error404 from "./pages/error404"
 import Footer from "./compoents/footer"
 import Properties from "./pages/properties"
+import PropertyDetails from "./pages/propertyDetails"
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
         <Route path="/" element={<Home />}/>
         <Route path="/agents" element={<Agents />} />
         <Route path="/properties" element={<Properties />} />
+        <Route path="/property/:id" element={<PropertyDetails />} />
         <Route path="*" element={<Error404 />} />
       </Routes>
       <Footer />

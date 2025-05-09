@@ -93,7 +93,7 @@ const Home = () => {
                 <Headings title={headings[0]['title']} desc={headings[0]['desc']} />
                 <div className="lg:w-[70%] md:w-[80%] sm:w-[75%] w-[90%] grid md:grid-cols-2 grid-cols-1 md:gap-7 gap-10">
                     {properties.slice(0, featureIndex).map((feature, index) => (
-                        <PropertyCard key={index} image={feature.image} title={feature.title} desc={feature.desc} bed={feature.bed} bath={feature.bath} rooms={feature.rooms} sq={feature.sq} price={feature.price} />
+                        <PropertyCard key={index} id={feature.id} image={feature.image} title={feature.title} desc={feature.desc} bed={feature.bed} bath={feature.bath} rooms={feature.rooms} sq={feature.sq} price={feature.price} />
                     ))}
                 </div>
                 <div className="flex gap-10">

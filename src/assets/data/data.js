@@ -41,6 +41,7 @@ import gallery6 from "../images/gallery/gallery6.png";
 
 export const properties = [
     {
+        id: 1,
         title: 'Bravo Apollo Apartments',
         desc: 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form injected',
         location: '779 6th Ave New York, NY 120400',
@@ -53,6 +54,7 @@ export const properties = [
         price: 32000
     },
     {
+        id: 2,
         title: 'Lorem Ipsum 2',
         desc: 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form injected',
         location: '779 6th Ave New York, NY 120400',
@@ -64,6 +66,7 @@ export const properties = [
         price: 30000
     },
     {
+        id: 3,
         title: 'Lorem Ipsum 3',
         desc: 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form injected',
         location: '779 6th Ave New York, NY 120400',
@@ -75,6 +78,7 @@ export const properties = [
         price: 27000
     },
     {
+        id: 4,
         title: 'Lorem Ipsum 4',
         desc: 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form injected',
         location: '779 6th Ave New York, NY 120400',
@@ -86,6 +90,7 @@ export const properties = [
         price: 23000
     },
     {
+        id: 5,
         title: 'Lorem Ipsum 5',
         desc: 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form injected',
         location: '779 6th Ave New York, NY 120400',
@@ -97,6 +102,7 @@ export const properties = [
         price: 40000
     },
     {
+        id: 6,
         title: 'Lorem Ipsum 6',
         desc: 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form injected',
         location: '779 6th Ave New York, NY 120400',
@@ -108,6 +114,7 @@ export const properties = [
         price: 26000
     },
     {
+        id: 7,
         title: 'Lorem Ipsum 7',
         desc: 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form injected',
         location: '779 6th Ave New York, NY 120400',
@@ -119,6 +126,7 @@ export const properties = [
         price: 26000
     },
     {
+        id: 8,
         title: 'Lorem Ipsum 8',
         desc: 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form injected',
         location: '779 6th Ave New York, NY 120400',
@@ -130,6 +138,7 @@ export const properties = [
         price: 26000
     },
     {
+        id: 9,
         title: 'Lorem Ipsum 9',
         desc: 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form injected',
         location: '779 6th Ave New York, NY 120400',
@@ -141,6 +150,7 @@ export const properties = [
         price: 26000
     },
     {
+        id: 10,
         title: 'Lorem Ipsum 10',
         desc: 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form injected',
         location: '779 6th Ave New York, NY 120400',
@@ -152,6 +162,7 @@ export const properties = [
         price: 26000
     },
     {
+        id: 11,
         title: 'Lorem Ipsum 11',
         desc: 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form injected',
         location: '779 6th Ave New York, NY 120400',
@@ -320,8 +331,16 @@ export const agents = [
 
 export const pages = [
     {
+        name: 'Home',
+        path: '',
+    },
+    {
         name: 'Agency',
         path: 'agents',
+    },
+    {
+        name: 'Property',
+        path: 'properties',
     },
     {
         name: 'Testimonials',
@@ -330,6 +349,10 @@ export const pages = [
     {
         name: 'Blogs',
         path: 'blogs',
+    },
+    {
+        name: 'About Us',
+        path: 'about',
     },
     {
         name: 'Pricing',
@@ -342,6 +365,10 @@ export const pages = [
     {
         name: 'FAQs',
         path: 'faqs',
+    },
+    {
+        name: 'Contact Us',
+        path: 'contact',
     },
     {
         name: 'Login',
