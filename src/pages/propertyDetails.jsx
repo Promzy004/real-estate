@@ -42,7 +42,7 @@ const PropertyDetails = () => {
 
             {previewImage && (
                 <div className="fixed flex flex-col justify-center items-center top-0 left-0 right-0 z-50 w-screen h-screen bg-[rgba(0,0,0,0.91)]">
-                    <div className="md:w-[70%] flex flex-col gap-2">
+                    <div className="md:w-[70%] w-[90%] flex flex-col gap-2">
                         <button className="text-white self-end" onClick={closePreview}>cancel</button>
                         <img src={currentImage} alt="" className="w-full max-h-[90%]"/>
                     </div>
