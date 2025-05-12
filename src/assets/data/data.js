@@ -182,6 +182,7 @@ export const properties = [
 import agent1 from "../images/agents/agent1.png"
 import agent2 from "../images/agents/agent2.png"
 import agent3 from "../images/agents/agent3.png"
+import agent4 from "../images/agents/testing.jpg"
 
 
 
@@ -219,8 +220,8 @@ export const agents = [
         pinterest: '',
     },
     {
-        id: 5,
-        image: agent3,
+        id: 6,
+        image: agent4,
         name: 'Edwin Promise',
         instagram: '',
         linkedIn: '',

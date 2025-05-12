@@ -41,10 +41,10 @@ const Header = () => {
                                     <span className="font-light">mail.uremail.com</span>
                                 </a>
                             </div>
-                            <a href="" className="flex justify-center items-center gap-2">
+                            <Link to="/register" className="flex justify-center items-center gap-2">
                                 <FaUser className="text-xl" />
                                 <span className="font-light">Login/Signup</span>
-                            </a>
+                            </Link>
                         </div>
                         <div className="flex justify-between items-center py-4 lg:px-36 px-10">
                             <Link to='/'>Brand name</Link>
@@ -73,25 +73,10 @@ const Header = () => {
                                         exit={{scaleY: 0, opacity: 0, originY: 0}}
                                     >
                                         <div className="h-[2px] absolute top-0 left-0 w-full bg-primaryColor"></div>
-                                        <div className="flex flex-col gap-2">
+                                        <div className="flex flex-col gap-1">
                                             {pages.filter(page => (page.name !== 'Home') && (page.name !== 'Property') && (page.name !== 'Contact Us') && (page.name !== 'About Us')).map((page, index) => (
-                                                <Link to={`/${page.path}`} onClick={() => setNavLinks(false)} key={index} className="hover:text-primaryColor py-2 hover:pl-3 hover:pr-0 pr-3 duration-300" >{page.name}</Link>
-                                                // <div>
-                                                //     {page.name !== 'Property' && (
-                                                //         <Link to={`/${page.path}`} onClick={() => setNavLinks(false)} key={index} className="hover:text-primaryColor inline-block p-1 hover:pl-3 hover:pr-0 pr-3 duration-300" >{page.name}</Link>
-                                                //     )}
-                                                // </div>
+                                                <Link to={`/${page.path}`} onClick={() => setNavLinks(false)} key={index} className="hover:text-primaryColor py-3 hover:pl-3 hover:pr-0 pr-3 duration-300" >{page.name}</Link>
                                             ))}
-                                            {/* <Link to='' className="hover:text-primaryColor hover:pl-3 duration-300">Agency</Link>
-                                            <Link to='' className="hover:text-primaryColor hover:pl-3 duration-300">Testimonials</Link>
-                                            <Link to='' className="hover:text-primaryColor hover:pl-3 duration-300">Blog</Link>
-                                            <Link to='' className="hover:text-primaryColor hover:pl-3 duration-300">Pricing</Link>
-                                            <Link to='' className="hover:text-primaryColor hover:pl-3 duration-300">Gallery</Link>
-                                            <Link to='' className="hover:text-primaryColor hover:pl-3 duration-300">Services</Link>
-                                            <Link to='' className="hover:text-primaryColor hover:pl-3 duration-300">FAQ</Link>
-                                            <Link to='' className="hover:text-primaryColor hover:pl-3 duration-300">Login</Link>
-                                            <Link to='' className="hover:text-primaryColor pr-3 hover:pl-3 hover:pr-0 duration-300">SignUp/Register</Link>
-                                            <Link to='' className="hover:text-primaryColor hover:pl-3 duration-300">Career</Link> */}
                                         </div>
                                     </motion.div>
                                 )
@@ -134,20 +119,10 @@ const Header = () => {
                                         exit={{x: '100vw', opacity: 0}}
                                     >
                                         <div className="h-[2px] absolute top-0 left-0 w-full bg-primaryColor"></div>
-                                        <div className="flex flex-col gap-5 overflow-y-auto">
+                                        <div className="flex flex-col gap-1 overflow-y-auto">
                                             {pages.map((page, index) => {
-                                                return <Link to={`/${page.path}`} onClick={() => setNavLinks(false)} key={index} className="hover:text-primaryColor hover:pl-3 hover:pr-0 pr-3 duration-300" >{page.name}</Link>
+                                                return <Link to={`/${page.path}`} onClick={() => setNavLinks(false)} key={index} className="hover:text-primaryColor hover:pl-3 py-3 hover:pr-0 pr-3 duration-300" >{page.name}</Link>
                                             })}
-                                            {/* <Link to='' className="hover:text-primaryColor hover:pl-3 duration-300">Agency</Link>
-                                            <Link to='' className="hover:text-primaryColor hover:pl-3 duration-300">Testimonials</Link>
-                                            <Link to='' className="hover:text-primaryColor hover:pl-3 duration-300">Blog</Link>
-                                            <Link to='' className="hover:text-primaryColor hover:pl-3 duration-300">Pricing</Link>
-                                            <Link to='' className="hover:text-primaryColor hover:pl-3 duration-300">Gallery</Link>
-                                            <Link to='' className="hover:text-primaryColor hover:pl-3 duration-300">Services</Link>
-                                            <Link to='' className="hover:text-primaryColor hover:pl-3 duration-300">FAQ</Link>
-                                            <Link to='' className="hover:text-primaryColor hover:pl-3 duration-300">Login</Link>
-                                            <Link to='' className="hover:text-primaryColor hover:pl-3 duration-300">SignUp/Register</Link>
-                                            <Link to='' className="hover:text-primaryColor hover:pl-3 duration-300">Career</Link> */}
                                         </div>
                                     </motion.div>
                                 )

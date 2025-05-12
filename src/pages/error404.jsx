@@ -4,10 +4,6 @@ const Error404 = () => {
 
 
     const navigate = useNavigate()
-    // const handleClick = (e) => {
-    //     e.preventDefault();
-    //     navigate('/')
-    // }
 
     return (
         <div className="mt-[120px] md:py-20 py-14 bg-primaryColor/10">

@@ -61,7 +61,7 @@ const AgentDetails = () => {
                     <div key={index} className="grid lg:grid-cols-2 md:grid-cols-[3fr_4fr] gap-10 border sm:p-5 p-3">
                         <div className="flex flex-col md:gap-5 gap-7">
                             <div className="flex sm:gap-5 gap-3 items-center">
-                                <img src={agent.image} onClick={() => handleShowImage(agent.image)} alt="agent image" className="lg:h-44 md:h-36" />
+                                <img src={agent.image} onClick={() => handleShowImage(agent.image)} alt="agent image" className="lg:h-44 md:h-36 h-36" />
                                 <div className="flex flex-col gap-4 items-start">
                                     <div className="relative flex flex-col gap-1 pb-4 before:content-[''] before:h-[2px] before:w-12 before:bg-gray-300 before:absolute before:left-0 before:bottom-0">
                                         <h2 className="lg:text-2xl md:text-xl text-lg font-medium">{agent.name}</h2>

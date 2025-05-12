@@ -9,6 +9,7 @@ import PropertyDetails from "./pages/propertyDetails"
 import AgentDetails from "./pages/agentDetails"
 import Register from "./pages/register"
 import Login from "./pages/login"
+import Contact from "./pages/contact"
 
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
         <Route path="*" element={<Error404 />} />
         <Route path="/register" element={<Register />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
       <Footer />
     </div>
