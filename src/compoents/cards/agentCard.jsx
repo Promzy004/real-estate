@@ -7,7 +7,7 @@ const AgentCard = ({image = agent1, name, instagram, linkendIn, pinterest, id}) 
     const navigate = useNavigate()
 
     const handleClick = () => {
-        navigate(`/agent/${id}`);
+        navigate(`/agent-details/${id}`);
         window.scrollTo(0, 0);
     }
 

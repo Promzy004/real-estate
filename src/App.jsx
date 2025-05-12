@@ -18,8 +18,8 @@ function App() {
         <Route path="/" element={<Home />}/>
         <Route path="/agents" element={<Agents />} />
         <Route path="/properties" element={<Properties />} />
-        <Route path="/property/:id" element={<PropertyDetails />} />
-        <Route path="/agent/:id" element={<AgentDetails />} />
+        <Route path="/property-details/:id" element={<PropertyDetails />} />
+        <Route path="/agent-details/:id" element={<AgentDetails />} />
         <Route path="*" element={<Error404 />} />
       </Routes>
       <Footer />

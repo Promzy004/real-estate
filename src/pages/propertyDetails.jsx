@@ -41,11 +41,9 @@ const PropertyDetails = () => {
         <div>
 
             {previewImage && (
-                <div className="fixed flex flex-col justify-center items-center top-0 left-0 right-0 z-50 w-screen h-screen bg-[rgba(0,0,0,0.91)]">
-                    <div className="md:w-[70%] w-[90%] flex flex-col gap-2">
-                        <button className="text-white self-end" onClick={closePreview}>cancel</button>
-                        <img src={currentImage} alt="" className="w-full max-h-[90%]"/>
-                    </div>
+                <div className="fixed flex flex-col justify-center items-center box-border top-0 left-0 right-0 z-50 w-screen h-screen bg-[rgba(0,0,0,0.91)]">
+                    <button className="text-white self-end md:pr-7 pr-2 mb-4" onClick={closePreview}>cancel</button>
+                    <img src={currentImage} alt="" className="bg-red-300 max-h-[90vh] max-w-[90vw] lg:min-h-[80%] lg:min-w-[80%] sm:min-h-[70%] sm:min-w-[70%] min-w-[100%] w-auto h-auto object-contain"/>
                 </div>
             )}
 
