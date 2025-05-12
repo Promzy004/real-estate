@@ -19,7 +19,7 @@ const Login = () => {
                         </label>
                         <input type="Submit" value='Login Account' className="bg-primaryColor self-center sm:px-7 sm:py-2 px-4 py-2 flex text-sm text-white mt-4 hover:text-color3 cursor-pointer" />
                     </div>
-                    <p className="md:text-sm text-xs">Have an account? <Link to='/login' className="text-primaryColor hover:underline">Sign in</Link> </p>
+                    <p className="md:text-sm text-xs">Don't have an account? <Link to='/register' className="text-primaryColor hover:underline">Sign Up</Link> </p>
                 </form>
             </div>
         </>
