@@ -22,6 +22,7 @@ function App() {
         <Route path="/properties" element={<Properties />} />
         <Route path="/property-details/:id" element={<PropertyDetails />} />
         <Route path="/agent-details/:id" element={<AgentDetails />} />
+        <Route path="/agent-details/:id" element={<Error404 />} />
         <Route path="*" element={<Error404 />} />
         <Route path="/register" element={<Register />} />
         <Route path="/login" element={<Login />} />
