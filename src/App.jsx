@@ -7,6 +7,8 @@ import Footer from "./compoents/footer"
 import Properties from "./pages/properties"
 import PropertyDetails from "./pages/propertyDetails"
 import AgentDetails from "./pages/agentDetails"
+import Register from "./pages/register"
+import Login from "./pages/login"
 
 
 function App() {
@@ -21,6 +23,8 @@ function App() {
         <Route path="/property-details/:id" element={<PropertyDetails />} />
         <Route path="/agent-details/:id" element={<AgentDetails />} />
         <Route path="*" element={<Error404 />} />
+        <Route path="/register" element={<Register />} />
+        <Route path="/login" element={<Login />} />
       </Routes>
       <Footer />
     </div>
