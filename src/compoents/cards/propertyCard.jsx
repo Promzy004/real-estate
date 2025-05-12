@@ -11,7 +11,7 @@ const PropertyCard = ({ image=img, title, desc, location, bed, bath, rooms, sq, 
     console.log(id)
 
     const handleClick = () => {
-        navigate(`/property/${id}`);
+        navigate(`/property-details/${id}`);
         window.scrollTo(0, 0);
     }
 
