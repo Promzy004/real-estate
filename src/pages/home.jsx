@@ -103,10 +103,10 @@ const Home = () => {
                 </div>
                 <div className="flex gap-10">
                     {(featureIndex < properties.length)&& (
-                        <button className="bg-primaryColor duration-300 hover:text-white/70 text-white px-6 py-3 text-sm" onClick={handleFeatureShowMore}>See More Property</button>
+                        <button className="bg-primaryColor duration-300 hover:text-white/70 text-white sm:px-6 px-4 sm:py-3 py-2 text-sm" onClick={handleFeatureShowMore}>See More Property</button>
                     )}
                     {featureIndex > 2 && (
-                        <button className="bg-gray-400 duration-300 hover:text-white/70 text-white px-6 py-3 text-sm" onClick={handleFeatureShowLess}>Show less</button>
+                        <button className="bg-gray-400 duration-300 hover:text-white/70 text-white sm:px-6 px-4 sm:py-3 py-2 text-sm" onClick={handleFeatureShowLess}>Show less</button>
                     )}
                 </div>
                 {/* <SeeMoreButton index={featureIndex} data_length={features.length} handleShowMore={handleFeatureShowMore} handleShowLess={handleFeatureShowLess} /> */}

@@ -11,11 +11,11 @@ const Login = () => {
                     <div className="flex flex-col gap-5 sm:w-[80%] w-[90%]">
                         <label className="flex flex-col gap-1 lg:text-base md:text-sm text-sm font-light">
                             Email Address
-                            <input type="text" className="hero-input" placeholder="Enter Email Address" />
+                            <input type="text" className="hero-input focus:border-primaryColor/50" placeholder="Enter Email Address" />
                         </label>
                         <label className="flex flex-col gap-1 lg:text-base md:text-sm text-sm font-light">
                             Password
-                            <input type="password" className="hero-input" placeholder="Enter Password" />
+                            <input type="password" className="hero-input focus:border-primaryColor/50" placeholder="Enter Password" />
                         </label>
                         <input type="Submit" value='Login Account' className="bg-primaryColor self-center sm:px-7 sm:py-2 px-4 py-2 flex text-sm text-white mt-4 hover:text-color3 cursor-pointer" />
                     </div>

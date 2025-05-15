@@ -6,7 +6,7 @@ const Error404 = () => {
     const navigate = useNavigate()
 
     return (
-        <div className="mt-[120px] md:py-20 py-14 bg-primaryColor/10">
+        <div className="sm:mt-[105px] mt-[100px] md:py-20 py-14 bg-primaryColor/10">
             <div className="flex flex-col gap-7 justify-center items-center sm:w-[22rem] w-[14rem] mx-auto">
                 <div className="relative w-full flex justify-center items-end">
                     <h3 className="sm:text-[10rem] sm:leading-none text-8xl font-semibold">404</h3>

@@ -90,19 +90,19 @@ const AgentDetails = () => {
                             <div className="flex flex-col gap-4">
                                 <label className="flex flex-col gap-1 lg:text-base md:text-sm text-sm">
                                     Full Name
-                                    <input type="text" className="hero-input" placeholder="Type Full Name" />
+                                    <input type="text" className="hero-input focus:border-primaryColor/50" placeholder="Type Full Name" />
                                 </label>
                                 <label className="flex flex-col gap-1 lg:text-base md:text-sm text-sm">
                                     Email
-                                    <input type="text" className="hero-input" placeholder="Your Email" />
+                                    <input type="text" className="hero-input focus:border-primaryColor/50" placeholder="Your Email" />
                                 </label>
                                 <label className="flex flex-col gap-1 lg:text-base md:text-sm text-sm">
                                     Subject
-                                    <input type="text" className="hero-input" placeholder="Type Subject" />
+                                    <input type="text" className="hero-input focus:border-primaryColor/50" placeholder="Type Subject" />
                                 </label>
                                 <label className="flex flex-col gap-1 lg:text-base md:text-sm text-sm">
                                     Message
-                                    <textarea name="" id="" className="hero-input" placeholder="Type Message"></textarea>
+                                    <textarea name="" id="" className="hero-input focus:border-primaryColor/50" placeholder="Type Message"></textarea>
                                 </label>
                                 <input type="Submit" value='Send Message' className="bg-primaryColor sm:px-7 sm:py-2 px-4 py-2 flex self-start text-sm text-white mt-3 hover:text-color3 cursor-pointer" />
                             </div>

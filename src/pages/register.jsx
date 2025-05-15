@@ -11,19 +11,19 @@ const Register = () => {
                     <div className="flex flex-col gap-5 sm:w-[80%] w-[90%]">
                         <label className="flex flex-col gap-1 lg:text-base md:text-sm text-sm font-light">
                             Full Name
-                            <input type="text" className="hero-input" placeholder="Type Full Name" />
+                            <input type="text" className="hero-input focus:border-primaryColor/50" placeholder="Type Full Name" />
                         </label>
                         <label className="flex flex-col gap-1 lg:text-base md:text-sm text-sm font-light">
                             Email Address
-                            <input type="text" className="hero-input" placeholder="Email Adreess" />
+                            <input type="text" className="hero-input focus:border-primaryColor/50" placeholder="Email Adreess" />
                         </label>
                         <label className="flex flex-col gap-1 lg:text-base md:text-sm text-sm font-light">
                             Password
-                            <input type="password" className="hero-input" placeholder="Password" />
+                            <input type="password" className="hero-input focus:border-primaryColor/50" placeholder="Password" />
                         </label>
                         <label className="flex flex-col gap-1 lg:text-base md:text-sm text-sm font-light">
                             Confirm Password
-                            <input type="password" className="hero-input" placeholder="Confirm Password" />
+                            <input type="password" className="hero-input focus:border-primaryColor/50" placeholder="Confirm Password" />
                         </label>
                         <input type="Submit" value='Register Account' className="bg-primaryColor self-center sm:px-7 sm:py-2 px-4 py-2 flex text-sm text-white mt-4 hover:text-color3 cursor-pointer" />
                     </div>
