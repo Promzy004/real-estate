@@ -53,7 +53,7 @@ const PropertyDetails = () => {
 
             <PagesHero title='Property Details' page='Property' />
             <div className="md:py-20 py-14 lg:w-[60%] md:w-[80%] sm:w-[75%] w-[90%] mx-auto">
-                {(property != '') 
+                {(property.length !== 0) 
                     ?
                         property.map((prop, index) => (
                             <div key={index} className="flex flex-col gap-10">
@@ -102,7 +102,7 @@ const PropertyDetails = () => {
                         ))
                     :
                         <div className="flex flex-col justify-center items-center gap-2">
-                            <div className="w-full h-full text-center p-3 font-semibold md:text-4xl text-xl">Item with an id {id} is not found</div>
+                            <div className="w-full h-full text-center p-3 font-semibold md:text-4xl text-xl">Item with an id <span className="text-red-600">{id}</span> is not found</div>
                             <button onClick={() => navigate('/properties')} className="bg-primaryColor self-center sm:px-7 sm:py-2 px-4 py-2 flex text-sm text-white mt-4 hover:text-color3">To Properties</button>
                         </div>
                 }
