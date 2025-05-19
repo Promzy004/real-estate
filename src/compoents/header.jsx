@@ -30,7 +30,7 @@ const Header = () => {
             {
                 !breakPoint && (
                     <>
-                        <div className="flex justify-between py-2 xl:px-48 lg:px-36 px-10 bg-primaryColor text-white">
+                        <div className="flex justify-between py-2 lg:px-36 px-10 bg-primaryColor text-white">
                             <div className="flex justify-center items-center gap-5">
                                 <a href="mailto:" className="flex justify-center items-center gap-2">
                                     <FaTelegramPlane className="text-2xl" />
