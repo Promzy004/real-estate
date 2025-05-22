@@ -98,6 +98,17 @@ const PropertyDetails = () => {
                                         </span>
                                     </div>
                                 </div>
+
+                                {prop.gallery && (
+                                    <div className="flex flex-col gap-4">
+                                        <h3 className="md:text-xl text-lg font-medium">Property Gallery</h3>
+                                        <div className="grid grid-cols-3 sm:gap-5 gap-3">
+                                            {prop.gallery.map((gal, index) => {
+                                                return <img onClick={() => handleShowImage(gal)} key={index} src={gal} alt="property images" className=" hover:border-2 hover:p-[2px] hover:border-primaryColor hover:scale-110" />
+                                            })}
+                                        </div>
+                                    </div>
+                                )}
                             </div>
                         ))
                     :
