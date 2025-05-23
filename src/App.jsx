@@ -10,6 +10,8 @@ import AgentDetails from "./pages/agentDetails"
 import Register from "./pages/register"
 import Login from "./pages/login"
 import Contact from "./pages/contact"
+import About from "./pages/about"
+import FAQs from "./pages/faq"
 
 
 function App() {
@@ -28,6 +30,8 @@ function App() {
         <Route path="/register" element={<Register />} />
         <Route path="/login" element={<Login />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/faqs" element={<FAQs />} />
       </Routes>
       <Footer />
     </div>

@@ -1,6 +1,14 @@
+import { useLocation } from "react-router-dom";
+import PagesHero from "../compoents/pagesHero";
+
 const About = () => {
+
+
     return (
-        <>About page</>
+        <>
+            <PagesHero title='About Us' page='about' />
+            <div className="md:py-20 py-14 flex justify-center items-center">About page</div>
+        </>
     );
 }
  
